@@ -1,5 +1,6 @@
 import ast
 my_file = open("config.json")
+a =  "{'name': 'haim'}"
 c =  dict(ast.literal_eval(my_file.read()))
 if c["name"] == "adir":
 print("i love devops experts")
