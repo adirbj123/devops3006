@@ -1,0 +1,9 @@
+properties([pipelineTriggers([pollSCM('* * * * * ')])])
+node {
+    stage("clone"){
+        git "https://github.com/adirbj123/devops3006.git"
+    }
+    stage("show files"){
+        sh "ls -l"
+    }
+}
